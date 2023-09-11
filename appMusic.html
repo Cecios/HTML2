@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Form e input fields </title>
+        <style>
+            body{
+                 background-color: black; 
+                 align-items: center;           
+                }
+                h1{color: lawngreen;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+                form{display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    width: 30%;
+                    border: 2px solid lawngreen;
+                    border-radius: 10px;
+                    padding: 10px;
+                    max-width: 350px;
+                    min-width: 300px;}
+                button{            
+                    height: 30px;
+                    width: 50%;
+                    max-width: 150px;
+                    cursor: pointer;
+                    color: whitesmoke;
+                    background-color: darkslategray;
+                    border: none;
+                    border-radius: 5px;}
+                    p{
+                    color: whitesmoke;                    
+                    }
+                    
+        </style>
+    </head>
+        <body>
+            <p>
+            <img src ="img/131894891.jpg"
+            style="width: 200px;"
+            alt="imgAppMusic"
+            />  
+            </p>
+          <h1 class="Titolo">Registrazione ad AppMusic </h1>
+          <p></p>
+          <h1> Inserisci i tuoi dati </h1>
+
+           <form onsubmit="alert('Registrazione inviata')">
+
+            <div style="border: 6px lawngreen;"> 
+                <input type="text" placeholder="Nome" />
+                <input type="text" placeholder="Cognome" />
+            </div>
+
+            <p></p>
+            
+            <div>           
+                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Conferma Password" />
+            </div>
+            
+            <p></p>
+
+            <div>
+                <input type="email" placeholder="Indirizzo Email" />
+            </div>
+
+            <p></p>
+
+            <div>
+                <input type="date" placeholder="Data di nascita" name="data"/>
+                <label style="color: whitesmoke;" for="data">Data di nascita</label>
+            </div>
+            <p></p>
+            <div>           
+                <input type="number" placeholder="Numero di telefono" />
+            </div>
+            
+            <p></p>
+            <hr style="width: 100%;"> 
+
+            <p style="font-size: 24px;" class="Gusti"> Gusti Musicali:</p>
+
+            <div>
+                <input type="checkbox" name="check1"/>
+                <label style="color: whitesmoke;" for ="check1" >Rock</label> 
+                <input type="checkbox" name="check2"/>
+                <label style="color: whitesmoke;" for ="check2" >Pop</label> 
+                <input type="checkbox" name="check3"/>
+                <label style="color: whitesmoke;" for ="check3" >Hip-Pop</label>
+                <input type="checkbox" name="check4"/>
+                <label style="color: whitesmoke;" for ="check4" >Rap</label>  
+            </div>
+            <div>
+                <input type="checkbox" name="check5"/>
+                <label style="color: whitesmoke;" for ="check8" >Trap</label> 
+                <input type="checkbox" name="check6"/>
+                <label style="color: whitesmoke;" for ="check8" >House</label> 
+                <input type="checkbox" name="check7"/>
+                <label style="color: whitesmoke;" for ="check8" >Techno</label>
+                <input type="checkbox" name="check8"/>
+                <label style="color: whitesmoke;" for ="check8" >Minimal</label>  
+            </div>
+            <p></p>
+            <div>
+                <input type="radio"/>
+                <label style="color: whitesmoke;" for ="radio" >Accetto Termini e Condizioni</label> 
+            </div>
+            <div>
+                <p>
+                <button type="submit">INVIA REGISTRAZIONE</button>
+                </p>
+            </div>
+            
+            </form>
+            <!--<div>
+                <button onclick="alert('Te lo avevo detto')">NON PREMERE!</button>
+            </div>
+        -->
+        </body>
+</html>
+
